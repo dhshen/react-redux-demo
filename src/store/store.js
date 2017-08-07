@@ -1,9 +1,6 @@
-/**
- * Created by dhshen on 2017/8/6.
- */
-import Reducer from '../reducers/Reducer';
-import { createStore } from 'redux';
+import {createStore} from 'redux';
+import reducer from '../reducers/reducer';
 
-const store = createStore(Reducer);
+const Store = createStore(reducer);
 
-export default store;
+export default Store;

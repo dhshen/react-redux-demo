@@ -1,15 +1,12 @@
-/**
- * Created by dhshen on 2017/8/6.
- */
 
-export const increase = () => {
+export const increase = ()=>{
     return {
-        type: 'INCREASE',
+        type: 'INCREASE'
     }
 }
 
-export const decrease = () => {
+export const decrease = ()=>{
     return {
-        type: 'DECREASE',
+        type: 'DECREASE'
     }
 }

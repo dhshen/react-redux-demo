@@ -1,17 +1,15 @@
-/**
- * Created by dhshen on 2017/8/6.
- */
 
-const Reducer = (state = {number:0},action)=>{
-    const number = state.number;
+const reducer = (state={number:0},action)=>{
+    let number = state.number;
     switch(action.type){
+
         case 'INCREASE':
-            return {number: number+1};break;
+            return {number:number+1};
         case 'DECREASE':
-            return {number: number-1};break;
+            return {number:number-1};
         default:
             return state;
     }
 }
 
-export default Reducer;
+export default reducer;
